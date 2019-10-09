@@ -556,102 +556,102 @@ public class PolynomialTest
   }
 
   /**
-       test the indexFirstNonZeroCoeffsLowToHigh function on {@code new int [] {0, -11, -12, 0, 0, 0};}
-       @see Polynomial#indexFirstNonZeroCoeffsLowToHigh
+       test the degreeOfPolynomialCoeffsLowToHigh function on {@code new int [] {0, -11, -12, 0, 0, 0};}
+       @see Polynomial#degreeOfPolynomialCoeffsLowToHigh
      */
   @Test
-  public void test_indexFirstNonZeroCoeffsLowToHigh_2() {
+  public void test_degreeOfPolynomialCoeffsLowToHigh_2() {
 
     int [] coeffsLowToHigh = new int [] {0, -11, -12, 0, 0, 0};
-    assertEquals(2,Polynomial.indexFirstNonZeroCoeffsLowToHigh(coeffsLowToHigh));
+    assertEquals(2,Polynomial.degreeOfPolynomialCoeffsLowToHigh(coeffsLowToHigh));
   }
 
   /**
-     test the indexFirstNonZeroCoeffsLowToHigh function on {@code  new int [] {0, -11, 0, 0, 0, 0};}
-     @see Polynomial#indexFirstNonZeroCoeffsLowToHigh
+     test the degreeOfPolynomialCoeffsLowToHigh function on {@code  new int [] {0, -11, 0, 0, 0, 0};}
+     @see Polynomial#degreeOfPolynomialCoeffsLowToHigh
    */
   @Test
-  public void test_indexFirstNonZeroCoeffsLowToHigh_1() {
+  public void test_degreeOfPolynomialCoeffsLowToHigh_1() {
 
     int [] coeffsLowToHigh = new int [] {0, -11, 0, 0, 0, 0};
-    assertEquals(1,Polynomial.indexFirstNonZeroCoeffsLowToHigh(coeffsLowToHigh));
+    assertEquals(1,Polynomial.degreeOfPolynomialCoeffsLowToHigh(coeffsLowToHigh));
   }
 
   /**
-     test the indexFirstNonZeroCoeffsLowToHigh function on {@code new int [] {-10, 0, 0, 0, 0, 0};}
-     @see Polynomial#indexFirstNonZeroCoeffsLowToHigh
+     test the degreeOfPolynomialCoeffsLowToHigh function on {@code new int [] {-10, 0, 0, 0, 0, 0};}
+     @see Polynomial#degreeOfPolynomialCoeffsLowToHigh
    */
   @Test
-  public void test_indexFirstNonZeroCoeffsLowToHigh_0a() {
+  public void test_degreeOfPolynomialCoeffsLowToHigh_0a() {
 
     int [] coeffsLowToHigh = new int [] {-10, 0, 0, 0, 0, 0};
-    assertEquals(0,Polynomial.indexFirstNonZeroCoeffsLowToHigh(coeffsLowToHigh));
+    assertEquals(0,Polynomial.degreeOfPolynomialCoeffsLowToHigh(coeffsLowToHigh));
   }
 
   /**
-     test the indexFirstNonZeroCoeffsLowToHigh function on {@code new int [] {0};}
-     @see Polynomial#indexFirstNonZeroCoeffsLowToHigh
+     test the degreeOfPolynomialCoeffsLowToHigh function on {@code new int [] {0};}
+     @see Polynomial#degreeOfPolynomialCoeffsLowToHigh
    */
   @Test
-  public void test_indexFirstNonZeroCoeffsLowToHigh_0c() {
+  public void test_degreeOfPolynomialCoeffsLowToHigh_0c() {
 
     int [] coeffsLowToHigh = new int [] {0};
-    assertEquals(0,Polynomial.indexFirstNonZeroCoeffsLowToHigh(coeffsLowToHigh));
+    assertEquals(0,Polynomial.degreeOfPolynomialCoeffsLowToHigh(coeffsLowToHigh));
   }
 
   /**
-     test the indexFirstNonZeroCoeffsHighToLow function on {@code new int [] {0, 0, 0, -10, -11, 0};}
-     @see Polynomial#indexFirstNonZeroCoeffsHighToLow
+     test the degreeOfPolynomialCoeffsHighToLow function on {@code new int [] {0, 0, 0, -10, -11, 0};}
+     @see Polynomial#degreeOfPolynomialCoeffsHighToLow
    */
   @Test
-  public void test_indexFirstNonZeroCoeffsHighToLow_2() {
+  public void test_degreeOfPolynomialCoeffsHighToLow_2() {
 
     int [] coeffsHighToLow = new int [] {0, 0, 0, -10, -11, 0};
-    assertEquals(2,Polynomial.indexFirstNonZeroCoeffsHighToLow(coeffsHighToLow));
+    assertEquals(2,Polynomial.degreeOfPolynomialCoeffsHighToLow(coeffsHighToLow));
   }
 
   /**
-     test the indexFirstNonZeroCoeffsHighToLow function on {@code new int [] {0, 0, 0, -10, 0};}
-     @see Polynomial#indexFirstNonZeroCoeffsHighToLow
+     test the degreeOfPolynomialCoeffsHighToLow function on {@code new int [] {0, 0, 0, -10, 0};}
+     @see Polynomial#degreeOfPolynomialCoeffsHighToLow
    */
   @Test
-  public void test_indexFirstNonZeroCoeffsHighToLow_1() {
+  public void test_degreeOfPolynomialCoeffsHighToLow_1() {
 
     int [] coeffsHighToLow = new int [] {0, 0, 0, -10, 0};
-    assertEquals(1,Polynomial.indexFirstNonZeroCoeffsHighToLow(coeffsHighToLow));
+    assertEquals(1,Polynomial.degreeOfPolynomialCoeffsHighToLow(coeffsHighToLow));
   }
 
   /**
-     test the indexFirstNonZeroCoeffsHighToLow function on {@code new int [] {0, 0, 0, 10};}
-     @see Polynomial#indexFirstNonZeroCoeffsHighToLow
+     test the degreeOfPolynomialCoeffsHighToLow function on {@code new int [] {0, 0, 0, 10};}
+     @see Polynomial#degreeOfPolynomialCoeffsHighToLow
    */
   @Test
-  public void test_indexFirstNonZeroCoeffsHighToLow_0a() {
+  public void test_degreeOfPolynomialCoeffsHighToLow_0a() {
 
     int [] coeffsHighToLow = new int [] {0, 0, 0, 10};
-    assertEquals(0,Polynomial.indexFirstNonZeroCoeffsHighToLow(coeffsHighToLow));
+    assertEquals(0,Polynomial.degreeOfPolynomialCoeffsHighToLow(coeffsHighToLow));
   }
 
   /**
-     test the indexFirstNonZeroCoeffsHighToLow function on all zeros
-     @see Polynomial#indexFirstNonZeroCoeffsHighToLow
+     test the degreeOfPolynomialCoeffsHighToLow function on all zeros
+     @see Polynomial#degreeOfPolynomialCoeffsHighToLow
    */
   @Test
-  public void test_indexFirstNonZeroCoeffsHighToLow_0b() {
+  public void test_degreeOfPolynomialCoeffsHighToLow_0b() {
 
     int [] coeffsHighToLow = new int [] {0, 0, 0};
-    assertEquals(0,Polynomial.indexFirstNonZeroCoeffsHighToLow(coeffsHighToLow));
+    assertEquals(0,Polynomial.degreeOfPolynomialCoeffsHighToLow(coeffsHighToLow));
   }
 
   /**
-     test the indexFirstNonZeroCoeffsHighToLow function on single zero
-     @see Polynomial#indexFirstNonZeroCoeffsHighToLow
+     test the degreeOfPolynomialCoeffsHighToLow function on single zero
+     @see Polynomial#degreeOfPolynomialCoeffsHighToLow
    */
   @Test
-  public void test_indexFirstNonZeroCoeffsHighToLow_0c() {
+  public void test_degreeOfPolynomialCoeffsHighToLow_0c() {
 
     int [] coeffsHighToLow = new int [] {0};
-    assertEquals(0,Polynomial.indexFirstNonZeroCoeffsHighToLow(coeffsHighToLow));
+    assertEquals(0,Polynomial.degreeOfPolynomialCoeffsHighToLow(coeffsHighToLow));
   }
 
   /**
