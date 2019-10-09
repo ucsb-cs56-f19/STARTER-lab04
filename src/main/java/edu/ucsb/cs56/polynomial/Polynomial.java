@@ -422,8 +422,8 @@ public class Polynomial extends ArrayList<Integer> {
   <p>
   Given an {@code int []} of coefficients from lowest to highest
   degree (where the index in the array matches the power of the
-  x term), find the index of the highest degree non-zero term.
-  If all terms are zero, return 0.
+  x term), find the degree of the polynomial represented
+  by the coefficients shown.
   </p>
 
   <p>
@@ -439,22 +439,23 @@ public class Polynomial extends ArrayList<Integer> {
 
   */
 
-  public static int indexFirstNonZeroCoeffsLowToHigh(int [] coeffsLowToHigh) {
-    // start at the high end, where trailing zeros might be,
-    // and work our way down to the first non zero, and return the
-    // index of that coefficient.
-    // e.g. {0, 10, 0, 20, 0, 30, 0, 0, 0, 0} => 5
-      
+  public static int degreeOfPolynomialCoeffsLowToHigh(int [] coeffsLowToHigh) {
+    
+    // e.g. {0, 20, 0, 20, 30, 0, 0, 0, 0}     => 4     (30x^4 + 20x^3 + 20x)
+    // e.g. {1, -7, 4, 0, 0, 0}                => 2     (4x^2 -7x + 1)
+    // e.g. {0, -11, -12, 0, 0, 0}             => 2     (-12x^2 - 11x) 
+    // e.g. {0, -11, 0, 0, 0, 0}               => 1     (-11x)
+    // e.g. {-10, 0, 0, 0, 0, 0}               => 0     (0)
       return 0; /* @@@ STUB! */
   }
 
 
   /**
   <p>
-  Given an int [] of coefficients from highest to lowest
-  degree (the formal used for input to the Polynomial constructor),
-  find the index of the highest degree non-zero term.
-  If all terms are zero, return 0.
+  Given an {@code int []} of coefficients from highest to lowest
+  power (where the x^0 term has the highest index in the array)
+  find the degree of the polynomial represented
+  by the coefficients shown.
   </p>
 
   <p>
@@ -465,16 +466,18 @@ public class Polynomial extends ArrayList<Integer> {
   Polynomial methods.
   </p>
 
-  @param coeffsHighToLow coefficients of a polynomial in order from highest degree first to lowest degree last.  May have leading zeros.
+  @param coeffsHighToLow coefficients of a polynomial in order from highest power of x first to lowest power of x last.  May have leading zeros.
   @return index of the highest degree non-zero term (if any, otherwise {@code 0})
   */
 
-  public static int indexFirstNonZeroCoeffsHighToLow(int [] coeffsHighToLow) {
+  public static int degreeOfPolynomialCoeffsHighToLow(int [] coeffsHighToLow) {
 
-    // start at the low end, where leading zeros might be,
-    // and work our way down to the first non zero, and return
-    // the length, minus that coefficient.
-    // e.g. {0, 0, 0, 0, 10, 0, 20, 0, 30, 0 } => 5
+    // e.g. {0, 0, 0, 0, 30, 20, 0, 20, 0}  => 4     (30x^4 + 20x^3 + 20x)
+    // e.g. {0, 0, 4, -7, 1}                => 2     (4x^2 -7x + 1)
+    // e.g. {0, 0, 0, -10, -11, 0}          => 2     (-10x^2 + 11)
+    // e.g. {0, 0, 0, -10, 0}               => 1     (-10x)
+    // e.g. {0, 0, 0, 10}                   => 0     (10)
+    // See test cases in PolynomialTest.java for more examples
 
       return 0; /* @@@ STUB! */
 
