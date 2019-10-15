@@ -3,5 +3,5 @@
 .settings
 target
 site
-docs
+docs/jacoco
 javadoc
