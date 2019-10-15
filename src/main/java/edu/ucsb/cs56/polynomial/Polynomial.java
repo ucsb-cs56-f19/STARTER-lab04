@@ -36,7 +36,7 @@ public class Polynomial extends ArrayList<Integer> {
 
   /**
      Get the degree of the polynomial.
-     Should be always {@literal >=1}
+     Should be always {@literal >=0}
      @return degree of the polynomial
    */
 
