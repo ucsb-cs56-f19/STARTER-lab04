@@ -62,12 +62,13 @@ public class Polynomial extends ArrayList<Integer> {
      </ul>
 
      <p>
-     NOTE that the order of coefficients is not necessarily the way
-     they will be stored in the array.   That is, the order of coefficients
-     in the array passed in is from highest degree down to lowest
-     degree, so for a cubic:
+     NOTE that the order of coefficients passed in the argument to the constructor
+     is NOT the way they should be stored in the ArrayList.   
+     The argument to the constructor is in high-to-low order by exponent of x, 
+     while the ArrayList you construct should be in low-to-high order by exponent of x.
      </p>
 
+     <p>For example, for a cubic, if <code>coeffs</code> is the parameter to the constructor</p>
      <ul>
          <li> <code>coeffs[0]</code> is the x<sup>3</sup> coefficient </li>
          <li> <code>coeffs[1]</code> is the x<sup>2</sup> coefficient </li>
@@ -79,7 +80,8 @@ public class Polynomial extends ArrayList<Integer> {
   It is done this way so that when initializing a polynomial
   from an array literal, the order of coefficients mirrors the
   way polynomials are typically written, from highest order
-  term to lowest order term:
+  term to lowest order term.  BUT the ArrayList uses a representation
+  where term i is the coefficient of the x<sup>i<sup> term, which is the OPPOSITE order.
   </p>
 
   <p>
