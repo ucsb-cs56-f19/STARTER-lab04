@@ -81,7 +81,7 @@ public class Polynomial extends ArrayList<Integer> {
   from an array literal, the order of coefficients mirrors the
   way polynomials are typically written, from highest order
   term to lowest order term.  BUT the ArrayList uses a representation
-  where term i is the coefficient of the x<sup>i<sup> term, which is the OPPOSITE order.
+  where term i is the coefficient of the x<sup>i</sup> term, which is the OPPOSITE order.
   </p>
 
   <p>
@@ -124,7 +124,7 @@ public class Polynomial extends ArrayList<Integer> {
      </ul>
 
 
-     <table summary="each row shows a math representation of the polynomial in HTML followed by the string representation that should be returned by the toString method">
+     <table>
      <caption>Examples of String Representation of Polynomials</caption>
      <tr><th>Math notation</th><th>String Representation</th></tr>
      <tr><td>0</td><td>{@code 0}</td></tr>
@@ -476,7 +476,7 @@ public class Polynomial extends ArrayList<Integer> {
 
     // e.g. {0, 0, 0, 0, 30, 20, 0, 20, 0}  => 4     (30x^4 + 20x^3 + 20x)
     // e.g. {0, 0, 4, -7, 1}                => 2     (4x^2 -7x + 1)
-    // e.g. {0, 0, 0, -10, -11, 0}          => 2     (-10x^2 + 11)
+    // e.g. {0, 0, 0, -10, -11, 0}          => 2     (-10x^2 - 11)
     // e.g. {0, 0, 0, -10, 0}               => 1     (-10x)
     // e.g. {0, 0, 0, 10}                   => 0     (10)
     // See test cases in PolynomialTest.java for more examples
