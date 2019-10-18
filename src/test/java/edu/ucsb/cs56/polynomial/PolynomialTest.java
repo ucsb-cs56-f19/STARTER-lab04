@@ -737,10 +737,10 @@ public class PolynomialTest
    */
   @Test
   public void test_lowToHigh_neg10x4_minus20x3_minus40() {
-    // polynomial: -10x^4 - 20x^3 -40x
-    int [] coeffsHighToLow = new int [] {0, -10, -20, 0, -40, 0};
+    // polynomial: -10x^4 - 20x^3 -40
+    int [] coeffsHighToLow = new int [] {0, -10, -20, 0, 0, -40};
     int [] actual = Polynomial.lowToHigh(coeffsHighToLow);
-    int [] expected = new int [] {0, -40, 0, -20, -10};
+    int [] expected = new int [] {-40, 0, 0, -20, -10};
     assertArrayEquals(expected, actual);
   }
 
