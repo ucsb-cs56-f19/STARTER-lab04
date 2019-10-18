@@ -732,11 +732,11 @@ public class PolynomialTest
   /**
      test the lowToHigh function that converts a highToLow int array of
      coefficients into a lowToHigh int array of coefficients,
-     using the polynomial <code> -10x^4 - 20x^3 -40</code>
+     using the polynomial <code> -10x^4 - 20x^3 -40x</code>
      @see Polynomial#lowToHigh
    */
   @Test
-  public void test_lowToHigh_neg10x4_minus20x3_minus40() {
+  public void test_lowToHigh_neg10x4_minus20x3_minus40x() {
     // polynomial: -10x^4 - 20x^3 -40x
     int [] coeffsHighToLow = new int [] {0, -10, -20, 0, -40, 0};
     int [] actual = Polynomial.lowToHigh(coeffsHighToLow);
